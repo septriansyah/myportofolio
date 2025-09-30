@@ -281,7 +281,7 @@ main div button:hover {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr; 
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -324,7 +324,7 @@ main div button:hover {
   -webkit-animation: slideInFromRight 0.6s ease-out forwards;
 }
 .skil_konten img{
-  max-width: 400px;
+  max-width: 250px;
   height: auto;
 }
 .lgo{
