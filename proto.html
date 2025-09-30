@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Septriansyah</title>
+  <link rel="icon" href="assets/Component 6.svg" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=download" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=download" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+<header></header>
+
+<nav class="bg-white/10 backdrop-blur-lg">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <!-- Tombol Mobile -->
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <button id="mobile-menu-button" type="button"
+          class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:outline-indigo-500">
+          <svg id="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <svg id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            class="h-6 w-6 hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Logo dan Navigasi -->
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex shrink-0 items-center">
+          <img src="assets/Dewa.png" alt="Your Logo" class="h-8 w-auto" />
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <a href="#about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-1000 hover:bg-white/5 hover:text-gray-300">About</a>
+            <a href="#skill" class="rounded-md px-3 py-2 text-sm font-medium text-gray-1000 hover:bg-white/5 hover:text-gray-300">Skill</a>
+            <a href="#Porto" class="rounded-md px-3 py-2 text-sm font-medium text-gray-1000 hover:bg-white/5 hover:text-gray-300">Portofolio</a>
+            <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-1000 hover:bg-white/5 hover:text-gray-300">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Foto Kanan -->
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <div class="relative ml-3">
+          <button type="button"
+            class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+            <img class="h-8 w-8 rounded-full" src="assets/uu.png" alt="User Photo">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu Mobile -->
+  <div class="sm:hidden" id="mobile-menu" hidden>
+    <div class="space-y-1 px-2 pt-2 pb-3">
+      <a href="#about" class="block rounded-md px-3 py-2 text-base font-medium text-gray-1000 hover:bg-white/5 hover:text-gray-1000">About</a>
+      <a href="#skill" class="block rounded-md px-3 py-2 text-base font-medium text-gray-1000 hover:bg-white/5 hover:text-gray-1000">Skill</a>
+      <a href="#Porto" class="block rounded-md px-3 py-2 text-base font-medium text-gray-1000 hover:bg-white/5 hover:text-gray-1000">Portofolio</a>
+      <a href="#contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-1000 hover:bg-white/5 hover:text-gray-1000">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="foto">
+        <img src="assets/wqd 1.png" alt="Foto Dewa">
+      </div>
+      <div class="konten">
+        <h1>Hello World I m</h1>
+        <h1>Dewa Ahmad Septriansyah</h1>
+        <p>Hi there! 👋 Welcome to my little corner on the web.</p>
+        <p class="pp">I’m Dewa, a tech enthusiast who loves to blend creativity with code — exploring design, development, and digital storytelling.</p>
+        <a href="assets/CV_Dewa Ahmad Septriansyah .pdf">
+        <button><span class="material-symbols-outlined">download </span>Download CV</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="Porto">
+    <div class="text-center bg-white-50">
+      <h1 class="head2"><img src="assets/PortoFolio.png" alt=""></h1>
+      <div class="grid grid-cols-3 ">
+        <div class="bg-white p-4 rounded-lg mr hr"><img src="assets/Frame 25.png" alt=""><p>Logo Tumbuh Asa BEM Kemakom</p></div>
+        <div class="bg-white p-4 rounded-lg mr"><img src="assets/Group 49.png" alt=""><p>Logo Apresiasi Seni 523 Hagia Sophia Generation</p></div>
+        <div class="bg-white p-4 rounded-lg mr"><img src="assets/Group 50.png" alt=""><p>Logo Hagia Sophia Ponpes Modern Darel Azhar</p></div>
+        <div class="bg-white p-4 rounded-lg mr"><img src="assets/Frame 6.png" alt=""><p>Festival Olahraga dan Seni Asrama UPI Bumi Siliwangi</p></div>
+        <div class="bg-white p-4 rounded-lg mr"><img src="assets/Frame 26.png" alt=""><p>Feeds Instagram @asrama_upi</p></div>
+        <div class="bg-white p-4 rounded-lg mr"><img src="assets/Frame 14.png" alt=""><p>Dokumentasi Fosa Asrama Bumi Siliwangi</p></div>
+      </div>
+  </div>
+  </section>
+
+  <section class="bg p-2" id="skill">
+    <img class="head" src="assets/Skills.png" alt="">
+      <p class="text-center text-bold p-3 p2">My Technical Level </p>
+  <div class="p-6 text-left bg grid">
+      <div class="skil_konten">
+        <h3>Frontend</h3>
+        <img src="assets/frontend.png" alt="" class="p-4">
+      </div>
+      <div class="skil_konten">
+        <h3>Design</h3>
+        <img src="assets/desain.png" alt="" class="p-4">
+      </div>
+  </div>
+  </section>
+  <section id="contact">
+  <img class="head2" src="assets/Get In Touch.png" alt="">
+  <p class="text-center text-bold p2">Have a project in mind or just want to say hi? Feel free to reach out.</p>
+  <div class="p-6 text-left bg-gray-100 grid">
+      <div class="skil_konten">
+        <input class="chat" type="text" placeholder="Your Name">
+      </div>
+      <a href="https://www.linkedin.com/in/septri-ansyah-5a2530313/" target="_blank">
+      <div class="skil_konten">
+        <h3 class="p-3">Linkedin</h3>
+        <img src="assets/LINKEDIN_icon-icons.com_65538.png" alt="" class="lgo"> <p class="p-2"> Dewa Septriansyah</p>
+      </div>
+      </a>
+      <div class="skil_konten items-left">
+        <input class="chat" type="text" placeholder="Your Massage">
+      </div>
+      <a href="https://www.instagram.com/septri_n.syah" target="_blank">
+      <div class="skil_konten items-left">
+        <h3 class="p-3">Gmail</h3>
+        <img src="assets/png-clipart-product-design-brand-handheld-devices-mobile-app-business-logo-gmail-angle-rectangle-Photoroom.png" alt="" class="lgo">
+        <p class="p-2">septriansyah31@gmail.com</p>
+      </div>
+      </a>
+      <button type ="submit">Send</button>
+  </div>
+  </section>
+</main>
+
+
+<footer class="bg ">
+  <div class="text-center p-4 bg-white/10 backdrop-blur-lg">
+    <img class="head" src="assets/Dewa.png" alt="">
+    <div class="gap-300 p-5">
+    <a class="" href="#Porto">Portofolio </a>
+    <a href="#contact">Contact  </a>
+    <a href="#skill">Skills</a>
+    </div>
+    <br>
+    © copyright | Dewa Ahmad Septriansyah
+  </div>
+</footer>
+<script src="script.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</body>
+</html>

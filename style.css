@@ -1,0 +1,332 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+:root{
+    --kuning : #FFE2AE;
+    --ungu : #4822A5;         
+    --putih: #FFFFFF;
+}
+
+@font-face {
+      font-family: 'stapel';
+      src: url('assets/Stapel_Medium.ttf') format('truetype');
+}
+@font-face {
+      font-family: 'stapelital';
+      src: url('assets/Stapel_Medium-Italic.ttf') format('truetype');
+}
+body{
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #2071b8;
+    color: #000000;
+    padding: 0px 0;
+    border-bottom: #ededed solid;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+nav button{
+    border: none;
+    padding: 5px 20px;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    margin: 0 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+nav button:hover{
+    background-color: #ffffff;
+}
+.hero {
+  padding: 60px 20px;
+  background-image: url('assets/Rectangle 3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  color: #fff;         
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: row; /* default: horizontal */
+}
+
+.foto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.foto img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.konten {
+  flex: 1;
+  min-width: 300px;
+}
+
+.konten h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.konten p {
+  font-size: 12px;
+  margin: 10px 0 20px;
+}
+
+.konten .icon img {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.konten button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 30px 20px;
+  font-size: 15px;
+  border: none;
+  background-color: var(--ungu);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.konten button:hover {
+  background-color: #3b82f6;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+/* RESPONSIVE: HP & Tablet */
+@media (max-width: 768px) {
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .konten h1 {
+    font-size: 28px;
+  }
+
+  .konten p {
+    font-size: 12px;
+  }
+
+  .konten button {
+    margin: 0 auto;
+  }
+}
+
+
+.konten {
+  text-align: left;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.konten h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #111827;
+  font-family: 'stapel', sans-serif !important;
+  animation: slideInFromRight 0.6s ease-out forwards;
+
+  /* Optional fallback for older browsers */
+  -webkit-animation: slideInFromRight 0.6s ease-out forwards;
+}
+
+.konten h1:hover {
+    color: var(--ungu);
+}
+
+.konten p {
+  font-size: 25px;
+  color: #374151;
+  font-family: 'stapelital', sans-serif !important;
+  animation: slideInFromRight 0.6s ease-out forwards;
+  -webkit-animation: slideInFromRight 0.6s ease-out forwards;
+}
+main div button {
+    height: 40px;
+    width: 170px;
+    background-color: #2c343b;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family: 'stapel' !important;
+    color: #fafafa;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: slideInFromRight 0.6s ease-out forwards;
+    -webkit-animation: slideInFromRight 0.6s ease-out forwards;
+
+}
+main div button:hover {
+    background-color: var(--ungu);
+}
+.im img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+    animation: slideInFromRight 0.6s ease-out forwards;
+  -webkit-animation: slideInFromRight 0.6s ease-out forwards;
+}
+.icon{
+  max-width: 300px;
+  display: block;
+  padding-bottom: 10px;
+  animation: slideInFromRight 0.6s ease-out forwards;
+  -webkit-animation: slideInFromRight 0.6s ease-out forwards;
+}
+.mr{
+  margin: 20px;
+  border: #d4d4d4 solid 1px;
+}
+.mr img{
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.mr p{
+  font-family: 'stapel', sans-serif !important;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+}
+.skil_konten {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em;
+  background: var(--putih);
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 1.25rem;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  -ms-border-radius: 1.25rem;
+  -o-border-radius: 1.25rem;
+}
+.skil_konten .lgo {
+  max-width: 50px;
+}
+
+.head{
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  animation: slideInFromRight 0.6s ease-out forwards;
+  -webkit-animation: slideInFromRight 0.6s ease-out forwards;
+}
+.p2{
+  font-size: 18px;
+  font-family: 'stapelital', sans-serif !important;
+}
+.bg{
+  background-color: var(--putih);
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Jadi satu kolom di layar kecil */
+  }
+}
+.kontak1{
+  font-size: 30px;
+  font-weight: bold;
+  color: #111827;
+  font-family: 'stapel', sans-serif !important;
+  text-align: center;
+}
+.chat{
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  padding-left: 5px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  font-size: 16px;
+}
+.chat1{
+  width: 100%;
+  padding-left: 5px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  font-size: 16px;
+}
+.head2{
+  max-width: 400px;
+  padding: 10px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  animation: slideInFromRight 0.6s ease-out forwards;
+  -webkit-animation: slideInFromRight 0.6s ease-out forwards;
+}
+.skil_konten img{
+  max-width: 400px;
+  height: auto;
+}
+.lgo{
+  height: auto;
+}
