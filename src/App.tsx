@@ -340,7 +340,7 @@ const ProjectsCarousel = () => {
     {
       title: "Vibrant Booth",
       desc: "An AI-powered web photobooth platform that allows users to capture, customize, and generate creative photo strips instantly. Designed as a SaaS product with modern UI and seamless user experience.",
-      image: "/src/img/Screenshot 2026-03-18 at 1.59.09 PM.png",
+      image: "/img/vibrant.png",
       tags: ["React", "Node.js", "Stripe"],
       color: "emerald",
       link: "https://github.com/septriansyah/Vibrant-Booth",
@@ -348,7 +348,7 @@ const ProjectsCarousel = () => {
     {
       title: "Website Asrama Bumi Siliwangi UPI",
       desc: "A dynamic website developed to manage dormitory information, announcements, and student activities. Built with a focus on usability, accessibility, and efficient data management.",
-      image: "/src/img/Screenshot 2026-03-20 at 12.02.22 AM.png",
+      image: "/img/asrama.png",
       tags: ["Laravel", "MySQL", "Tailwind"],
       color: "amber",
       link: "https://github.com/septriansyah/Website-Asrama"
@@ -356,7 +356,7 @@ const ProjectsCarousel = () => {
     {
       title: "UI EduGrade",
       desc: "A comprehensive library of reusable UI components for Figma.",
-      image: "/src/img/Screenshot 2026-03-19 at 9.28.33 PM.png",
+      image: "/img/UI.png",
       tags: ["Figma", "UI Design", "UX"],
       color: "rose",
       link:"https://www.figma.com/design/68uDY6VP6DzcIT6kusnuQf/UI-EduGrade?node-id=0-1&t=nDjRU9VlbXH55pqE-1"
@@ -364,7 +364,7 @@ const ProjectsCarousel = () => {
     {
       title: "Portfolio Website",
       desc: "Modern and responsive portfolio for creative professionals.",
-      image: "/src/img/Screenshot 2026-03-19 at 9.20.55 PM.png",
+      image: "/img/porto.png",
       tags: ["React", "Framer Motion", "Tailwind"],
       color: "indigo",
       link: "https://github.com/septriansyah/myportofolio"
@@ -577,7 +577,7 @@ const sendEmail = (e) => {
 
               <div className="relative aspect-[3/4] rounded-[2.5rem] overflow-hidden border-[8px] border-white shadow-2xl transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105">
                 <img 
-                  src="/src/img/hero.png" 
+                  src="/img/hero.png" 
                   alt="Dewa Ahmad" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -609,7 +609,7 @@ const sendEmail = (e) => {
             >
               <div className="aspect-[4/5] rounded-[3rem] bg-slate-50 overflow-hidden border-[12px] border-white shadow-2xl transition-transform duration-500 group-hover:-rotate-3 group-hover:scale-105">
                 <img 
-                  src="/src/img/about.JPG" 
+                  src="/img/about.jpg" 
                   alt="Dewa Ahmad" 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
