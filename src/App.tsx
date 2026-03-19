@@ -366,7 +366,8 @@ const ProjectsCarousel = () => {
       desc: "Modern and responsive portfolio for creative professionals.",
       image: "/src/img/Screenshot 2026-03-19 at 9.20.55 PM.png",
       tags: ["React", "Framer Motion", "Tailwind"],
-      color: "indigo"
+      color: "indigo",
+      link: "https://github.com/septriansyah/myportofolio"
     }
   ];
 
