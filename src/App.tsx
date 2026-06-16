@@ -338,6 +338,30 @@ const TechMarquee = () => {
 const ProjectsCarousel = () => {
   const projects = [
     {
+      title: "Portal UPI DPPM",
+      desc: "Information portal and service platform for the Directorate of Research and Community Service (DPPM) UPI. Features expert search, latest news, and community service programs.",
+      image: "/img/dppm.png",
+      tags: ["React", "Tailwind", "Portal"],
+      color: "emerald",
+      link: "https://github.com/bangyogs/DPPM",
+    },
+    {
+      title: "EduGrade AI",
+      desc: "Revolutionizing academic evaluation with AI-Core Engine. Features include automated Bloom's Taxonomy question generation, smart item analysis, and integrated class management.",
+      image: "/img/edugrade.png",
+      tags: ["AI", "React", "Education"],
+      color: "indigo",
+      link: "https://edugrade-platform.vercel.app/",
+    },
+    {
+      title: "Catch the Prime",
+      desc: "Interactive educational math game designed for Grade 4 students to identify and 'catch' prime numbers while avoiding composite numbers.",
+      image: "/img/catchtheprime.png",
+      tags: ["JavaScript", "HTML", "Game"],
+      color: "rose",
+      link: "https://catchtheprime.netlify.app/",
+    },
+    {
       title: "Vibrant Booth",
       desc: "An AI-powered web photobooth platform that allows users to capture, customize, and generate creative photo strips instantly. Designed as a SaaS product with modern UI and seamless user experience.",
       image: "/img/vibrant.png",
@@ -375,9 +399,22 @@ const ProjectsCarousel = () => {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    if (carouselRef.current) {
-      setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
-    }
+    const updateWidth = () => {
+      if (carouselRef.current) {
+        setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
+      }
+    };
+    
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    
+    // Also update after images are likely loaded
+    const timeout = setTimeout(updateWidth, 500);
+    
+    return () => {
+      window.removeEventListener("resize", updateWidth);
+      clearTimeout(timeout);
+    };
   }, []);
 
   return (
@@ -395,12 +432,12 @@ const ProjectsCarousel = () => {
           <motion.div 
             drag="x" 
             dragConstraints={{ right: 0, left: -width }}
-            className="flex gap-10"
+            className="flex gap-10 w-max"
           >
             {projects.map((project, index) => (
               <motion.div 
                 key={index} 
-                className="min-w-[320px] md:min-w-[400px] bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 group shadow-sm hover:shadow-xl transition-all duration-500"
+                className="w-[300px] md:w-[380px] flex-shrink-0 bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 group shadow-sm hover:shadow-xl transition-all duration-500"
               >
                 <div className="aspect-video overflow-hidden">
                   <img 
